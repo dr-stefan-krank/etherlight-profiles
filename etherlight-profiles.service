@@ -1,0 +1,13 @@
+[Unit]
+Description=UniFi Etherlighting per Port-Profil
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/etherlight-profiles/etherlight_profiles.py /opt/etherlight-profiles/config.yaml
+Restart=always
+RestartSec=5
+User=unifi
+
+[Install]
+WantedBy=multi-user.target
