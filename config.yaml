@@ -1,0 +1,20 @@
+controller:
+  url: https://192.168.1.1        # UniFi OS Server
+  api_key: "YOUR_API_KEY"
+  site: default
+  verify_tls: false
+switch:
+  mac: "aa:bb:cc:dd:ee:ff"
+  ssh_host: 192.168.1.10
+  ssh_user: admin
+  ssh_key: /opt/etherlight-profiles/id_rsa
+interval_s: 10
+brightness_link: 100      # Percent, 1-100
+brightness_nolink: 5
+default_color: "ffffff"
+profiles:                 # Name of the port-profile -> color (Hex-RGB)
+  "All": "00aaff"
+  "IoT": "ff8800"
+  "Server": "00ff00"
+  "Management": "ff0000"
+
