@@ -8,6 +8,8 @@ This makes it very easy to plug in new devices based on the port color.
 
 Ports with no link have a lower brightness which you can configure to distinguish them from active ports.
 
+![Etherlighting mit Port-Profil-Farben](images/etherlighting.png)
+
 ## Disclaimer
 
 This script writes to undocumented `/proc/led/*` interfaces over SSH. This may conflict with Ubiquiti's Terms of Service and may affect your warranty. Use it at your own risk and test on a non-critical switch first. Firmware updates can change or break the interface.
